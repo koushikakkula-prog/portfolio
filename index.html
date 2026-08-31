@@ -1,0 +1,899 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akula Koushik | Software Developer Portfolio</title>
+  
+  <!-- Meta Information for SEO -->
+  <meta name="description" content="Akula Koushik is a 4th-year Computer Science Engineering student and aspiring Software Developer specializing in Java, Frontend, Backend, and AI applications.">
+  <meta name="keywords" content="Akula Koushik, Software Developer, Java Developer, Portfolio, Computer Science Engineering, Hyderabad, Web Development, Siddhartha Institute of Technology and Sciences">
+  <meta name="author" content="Akula Koushik">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:title" content="Akula Koushik | Software Developer Portfolio">
+  <meta property="og:description" content="Explore the projects, skills, and academic background of Akula Koushik, an aspiring Software Developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-weight='900' fill='%238b5cf6'>AK</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+  <!-- Background Ambient Glow Elements -->
+  <div class="glow-sphere glow-sphere-1" aria-hidden="true"></div>
+  <div class="glow-sphere glow-sphere-2" aria-hidden="true"></div>
+  <div class="glow-sphere glow-sphere-3" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="navbar">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Akula Koushik Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">AK</span>
+        <span class="logo-dot">.</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-primary glow-effect">Get in Touch</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <div class="mobile-nav-inner">
+        <ul class="mobile-nav-links">
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-socials">
+          <a href="https://github.com/koushikakkula-prog" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/akula-koushik-7b52ab291/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:koushikakkula@gmail.com" class="social-icon" aria-label="Email Akula Koushik">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Left / Hero Text Content -->
+        <div class="hero-content reveal-fade-up">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Akula Koushik</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span class="role-prefix">I am a </span>
+            <span class="hero-role">Software Developer</span>
+          </div>
+
+          <p class="hero-description">
+            Iâ€™m a Computer Science Engineering student at Siddhartha Institute of Technology and Sciences, interested in building practical software with clean, user-focused experiences.
+          </p>
+
+          <!-- Call to Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary glow-effect">
+              <span>View Projects</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary glass-panel">
+              <span>Contact Me</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero Social Links -->
+          <div class="hero-social-bar">
+            <span class="social-label">Connect:</span>
+            <div class="social-links-list">
+              <a href="https://github.com/koushikakkula-prog" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/akula-koushik-7b52ab291/" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn">
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right / Hero Profile Photo Showcase -->
+        <div class="hero-image-wrapper reveal-scale">
+          <div class="profile-glow-ring"></div>
+          <div class="profile-glow-ring-cyan"></div>
+          
+          <div class="profile-card-container">
+            <div class="profile-image-frame">
+              <img src="assets/images/profile.jpg" alt="Akula Koushik - Software Developer" class="profile-img" loading="eager">
+              <div class="profile-overlay-gradient"></div>
+            </div>
+
+            <!-- Floating Badges -->
+            <div class="floating-badge badge-top-left glass-panel">
+              <div class="badge-icon-wrap icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="badge-text">
+                <span class="badge-title">Software Developer</span>
+                <span class="badge-sub">CSE â€¢ 4th Year</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-right glass-panel">
+              <div class="badge-icon-wrap icon-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="badge-text">
+                <span class="badge-title">Hyderabad, India</span>
+                <span class="badge-sub">Open to Opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll down to About section">
+        <div class="mouse-icon">
+          <div class="wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <span class="tag-hash">#</span> About Me
+          </div>
+          <h2 class="section-title">
+            Building skills for a <span class="gradient-text">career in software</span>
+          </h2>
+          <p class="section-subtitle">Passionate about clean code, robust architecture, and solving real-world challenges.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Main Narrative Card -->
+          <div class="about-card narrative-card glass-panel reveal-fade-up">
+            <div class="card-glow-bg"></div>
+            
+            <div class="about-text-content">
+              <h3 class="about-card-title">
+                <span class="text-highlight">Aspiring Developer</span> with an Engineering Mindset
+              </h3>
+              
+              <p class="about-paragraph">
+                I am a 4th-year Computer Science Engineering student at Siddhartha Institute of Technology and Sciences, Hyderabad. My goal is to grow as a software developer by working on useful applications and solving real-world problems through technology.
+              </p>
+              
+              <p class="about-paragraph">
+                My current interests include <strong>Java</strong>, <strong>frontend development</strong>, and <strong>backend development</strong>, along with <strong>AI-focused academic projects</strong>. I focus on writing clean, readable, modular code and crafting user-centric digital experiences.
+              </p>
+
+              <!-- Quick Info Chips -->
+              <div class="info-chips-grid">
+                <div class="info-chip">
+                  <span class="chip-label">Degree</span>
+                  <span class="chip-value">B.Tech in Computer Science</span>
+                </div>
+                <div class="info-chip">
+                  <span class="chip-label">Institution</span>
+                  <span class="chip-value">Siddhartha Inst. of Tech. & Sciences</span>
+                </div>
+                <div class="info-chip">
+                  <span class="chip-label">Current Stage</span>
+                  <span class="chip-value">4th Year (Graduating 2026)</span>
+                </div>
+                <div class="info-chip">
+                  <span class="chip-label">Location</span>
+                  <span class="chip-value">Hyderabad, Telangana, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Stats Cards -->
+          <div class="stats-column reveal-fade-up" style="--reveal-delay: 0.15s;">
+            
+            <div class="stat-card glass-panel">
+              <div class="stat-icon-wrapper icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <div class="stat-number gradient-text">04</div>
+                <div class="stat-title">Academic Year</div>
+                <div class="stat-desc">Senior CSE student building production-ready skills</div>
+              </div>
+            </div>
+
+            <div class="stat-card glass-panel">
+              <div class="stat-icon-wrapper icon-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <div class="stat-number gradient-text">02</div>
+                <div class="stat-title">Featured Projects</div>
+                <div class="stat-desc">AI-driven & predictive system engineering</div>
+              </div>
+            </div>
+
+            <div class="stat-card glass-panel">
+              <div class="stat-icon-wrapper icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="stat-info">
+                <div class="stat-number gradient-text">03</div>
+                <div class="stat-title">Core Skill Areas</div>
+                <div class="stat-desc">Java OOP, Modern Frontend & Backend Systems</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <span class="tag-hash">#</span> Technical Proficiency
+          </div>
+          <h2 class="section-title">
+            Technologies I <span class="gradient-text">work with</span>
+          </h2>
+          <p class="section-subtitle">Core languages, development tools, and engineering specializations.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Skill Card 1: Java -->
+          <div class="skill-card glass-panel reveal-fade-up" style="--reveal-delay: 0.05s;">
+            <div class="skill-card-inner">
+              <div class="skill-icon-header">
+                <div class="skill-icon-box icon-purple">
+                  <!-- Java SVG Icon -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                  </svg>
+                </div>
+                <span class="skill-level-badge">Core Language</span>
+              </div>
+
+              <h3 class="skill-name">Java</h3>
+              <p class="skill-description">
+                Building reliable software using object-oriented principles, modular design, and robust data structures.
+              </p>
+
+              <div class="skill-tags">
+                <span class="skill-tag">Object-oriented programming</span>
+                <span class="skill-tag">Application development</span>
+                <span class="skill-tag">Data Structures</span>
+                <span class="skill-tag">Core Java</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2: HTML & Web Standards -->
+          <div class="skill-card glass-panel reveal-fade-up" style="--reveal-delay: 0.15s;">
+            <div class="skill-card-inner">
+              <div class="skill-icon-header">
+                <div class="skill-icon-box icon-cyan">
+                  <!-- HTML / Web Icon -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="4 17 10 11 4 5"></polyline>
+                    <line x1="12" y1="19" x2="20" y2="19"></line>
+                  </svg>
+                </div>
+                <span class="skill-level-badge">Web Foundation</span>
+              </div>
+
+              <h3 class="skill-name">HTML</h3>
+              <p class="skill-description">
+                Crafting semantic, accessible, and structured foundations for modern web applications across screen sizes.
+              </p>
+
+              <div class="skill-tags">
+                <span class="skill-tag">Structured web development</span>
+                <span class="skill-tag">Responsive interfaces</span>
+                <span class="skill-tag">Semantic HTML5</span>
+                <span class="skill-tag">Accessibility</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3: Frontend Development -->
+          <div class="skill-card glass-panel reveal-fade-up" style="--reveal-delay: 0.25s;">
+            <div class="skill-card-inner">
+              <div class="skill-icon-header">
+                <div class="skill-icon-box icon-purple">
+                  <!-- Frontend Monitor Icon -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <span class="skill-level-badge">UI & UX</span>
+              </div>
+
+              <h3 class="skill-name">Frontend Development</h3>
+              <p class="skill-description">
+                Designing interactive, user-centric interfaces with responsive CSS layouts, smooth micro-animations, and modern styling.
+              </p>
+
+              <div class="skill-tags">
+                <span class="skill-tag">Modern responsive user interfaces</span>
+                <span class="skill-tag">Web development</span>
+                <span class="skill-tag">CSS3 & Layouts</span>
+                <span class="skill-tag">JavaScript / DOM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 4: Backend Development -->
+          <div class="skill-card glass-panel reveal-fade-up" style="--reveal-delay: 0.35s;">
+            <div class="skill-card-inner">
+              <div class="skill-icon-header">
+                <div class="skill-icon-box icon-cyan">
+                  <!-- Server / Backend Icon -->
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <span class="skill-level-badge">Server Architecture</span>
+              </div>
+
+              <h3 class="skill-name">Backend Development</h3>
+              <p class="skill-description">
+                Engineering backend logic, database management, and dependable server-side application flows.
+              </p>
+
+              <div class="skill-tags">
+                <span class="skill-tag">Server-side development</span>
+                <span class="skill-tag">Application architecture</span>
+                <span class="skill-tag">Database Concepts</span>
+                <span class="skill-tag">API Integration</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <span class="tag-hash">#</span> Portfolio Showcase
+          </div>
+          <h2 class="section-title">
+            Selected <span class="gradient-text">Work</span>
+          </h2>
+          <p class="section-subtitle">Academic and applied software projects demonstrating machine learning, system design, and algorithms.</p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- Project 1 -->
+          <article class="project-card glass-panel reveal-fade-up">
+            <div class="project-card-grid">
+              
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-number">PROJECT 01</span>
+                  <span class="project-category-badge category-ai">AI / MACHINE LEARNING</span>
+                  <span class="project-academic-badge">Academic Project</span>
+                </div>
+
+                <h3 class="project-title">Student Performance Prediction</h3>
+                
+                <p class="project-description">
+                  A student-focused prediction project aimed at using academic data to identify performance patterns and support better educational decisions. Analyzes historical performance metrics to provide actionable insights for academic enhancement.
+                </p>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Machine Learning</span>
+                  <span class="tech-pill">Data Analytics</span>
+                  <span class="tech-pill">Pattern Recognition</span>
+                  <span class="tech-pill">Python</span>
+                  <span class="tech-pill">Predictive Modeling</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://github.com/koushikakkula-prog" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>View Repository</span>
+                  </a>
+                  <a href="#contact" class="btn btn-sm btn-secondary glass-panel">
+                    <span>Discuss Project</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project Visual Preview Frame -->
+              <div class="project-visual">
+                <div class="project-visual-box">
+                  <div class="project-visual-header">
+                    <div class="window-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">student_performance_model.py</span>
+                  </div>
+                  <div class="project-code-mockup">
+                    <div class="code-line"><span class="c-keyword">import</span> <span class="c-var">numpy</span> <span class="c-keyword">as</span> <span class="c-var">np</span></div>
+                    <div class="code-line"><span class="c-keyword">import</span> <span class="c-var">pandas</span> <span class="c-keyword">as</span> <span class="c-var">pd</span></div>
+                    <div class="code-line"><span class="c-keyword">from</span> <span class="c-var">sklearn.ensemble</span> <span class="c-keyword">import</span> <span class="c-func">RandomForestClassifier</span></div>
+                    <div class="code-line empty"></div>
+                    <div class="code-line"><span class="c-comment"># Analyze academic performance metrics</span></div>
+                    <div class="code-line"><span class="c-keyword">def</span> <span class="c-func">evaluate_student_performance</span>(dataset):</div>
+                    <div class="code-line indent-1"><span class="c-var">patterns</span> = <span class="c-func">extract_features</span>(dataset)</div>
+                    <div class="code-line indent-1"><span class="c-var">predictions</span> = <span class="c-var">model</span>.<span class="c-func">predict</span>(<span class="c-var">patterns</span>)</div>
+                    <div class="code-line indent-1"><span class="c-keyword">return</span> <span class="c-func">generate_actionable_insights</span>(<span class="c-var">predictions</span>)</div>
+                  </div>
+                  <div class="project-badge-overlay">
+                    <div class="stat-highlight-pill">
+                      <span class="stat-dot-green"></span>
+                      <span>Pattern Detection Engine</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-panel reveal-fade-up">
+            <div class="project-card-grid">
+              
+              <div class="project-info">
+                <div class="project-meta">
+                  <span class="project-number">PROJECT 02</span>
+                  <span class="project-category-badge category-uam">AI / URBAN AIR MOBILITY</span>
+                  <span class="project-academic-badge">Academic Project</span>
+                </div>
+
+                <h3 class="project-title">AI-Based Air Traffic Conflict Detection for Urban Air Mobility</h3>
+                
+                <p class="project-description">
+                  An AI-oriented project focused on detecting potential conflicts in urban air mobility and supporting safer air traffic management. Uses trajectory prediction and spatial conflict algorithms to anticipate airspace hazards in low-altitude urban corridors.
+                </p>
+
+                <div class="project-tech-stack">
+                  <span class="tech-pill">Artificial Intelligence</span>
+                  <span class="tech-pill">Urban Air Mobility</span>
+                  <span class="tech-pill">Conflict Detection</span>
+                  <span class="tech-pill">Spatial Algorithms</span>
+                  <span class="tech-pill">Air Traffic Safety</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="https://github.com/koushikakkula-prog" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    <span>View Repository</span>
+                  </a>
+                  <a href="#contact" class="btn btn-sm btn-secondary glass-panel">
+                    <span>Discuss Project</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project Visual Preview Frame -->
+              <div class="project-visual">
+                <div class="project-visual-box">
+                  <div class="project-visual-header">
+                    <div class="window-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">uam_conflict_detector.py</span>
+                  </div>
+                  <div class="project-code-mockup">
+                    <div class="code-line"><span class="c-keyword">class</span> <span class="c-func">AirspaceConflictDetector</span>:</div>
+                    <div class="code-line indent-1"><span class="c-keyword">def</span> <span class="c-func">detect_trajectory_conflict</span>(<span class="c-var">self</span>, <span class="c-var">drone_a</span>, <span class="c-var">drone_b</span>):</div>
+                    <div class="code-line indent-2"><span class="c-comment"># Compute minimum separation distance</span></div>
+                    <div class="code-line indent-2"><span class="c-var">distance_vector</span> = <span class="c-var">drone_a</span>.<span class="c-var">pos</span> - <span class="c-var">drone_b</span>.<span class="c-var">pos</span></div>
+                    <div class="code-line indent-2"><span class="c-keyword">if</span> <span class="c-var">distance_vector</span>.<span class="c-func">magnitude</span>() &lt; <span class="c-var">SAFETY_THRESHOLD</span>:</div>
+                    <div class="code-line indent-3"><span class="c-keyword">return</span> <span class="c-func">generate_deconfliction_advisory</span>()</div>
+                    <div class="code-line indent-2"><span class="c-keyword">return</span> <span class="c-var">Status</span>.<span class="c-var">CLEAR</span></div>
+                  </div>
+                  <div class="project-badge-overlay">
+                    <div class="stat-highlight-pill cyan-pill">
+                      <span class="stat-dot-cyan"></span>
+                      <span>Real-Time Collision Avoidance</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <span class="tag-hash">#</span> Education
+          </div>
+          <h2 class="section-title">
+            Academic <span class="gradient-text">Background</span>
+          </h2>
+          <p class="section-subtitle">Formal foundation in Computer Science, engineering methodologies, and programming concepts.</p>
+        </div>
+
+        <div class="education-timeline-container reveal-fade-up">
+          
+          <div class="timeline-track">
+            <div class="timeline-progress-line"></div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-indicator-node">
+              <div class="node-pulse"></div>
+              <div class="node-core"></div>
+            </div>
+
+            <div class="timeline-card glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <span class="timeline-period-badge">2022 â€” 2026 (4th Year / Senior)</span>
+                  <h3 class="timeline-degree">B.Tech in Computer Science Engineering</h3>
+                  <h4 class="timeline-institution">Siddhartha Institute of Technology and Sciences</h4>
+                </div>
+                <div class="timeline-location">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Hyderabad, India</span>
+                </div>
+              </div>
+
+              <p class="timeline-description">
+                Currently pursuing 4th year in Computer Science Engineering. Focusing on core software development, object-oriented programming with Java, web development fundamentals, algorithms, and artificial intelligence project implementations.
+              </p>
+
+              <div class="timeline-highlights">
+                <span class="highlight-tag">Object-Oriented Programming</span>
+                <span class="highlight-tag">Data Structures & Algorithms</span>
+                <span class="highlight-tag">Database Management Systems</span>
+                <span class="highlight-tag">Software Engineering</span>
+                <span class="highlight-tag">Artificial Intelligence</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ongoing Learning & Certifications Section -->
+        <div class="certifications-notice glass-panel reveal-fade-up" style="--reveal-delay: 0.15s;">
+          <div class="cert-notice-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <div class="cert-notice-text">
+            <h4>Continuous Learning & Professional Certifications</h4>
+            <p>Currently expanding domain expertise across advanced software engineering tracks and modern full-stack development. Certifications and verifiable credentials will be published here upon completion.</p>
+          </div>
+          <span class="cert-badge">In Progress</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header reveal-fade-up">
+          <div class="section-tag">
+            <span class="tag-hash">#</span> Get in Touch
+          </div>
+          <h2 class="section-title">
+            Have a project or <span class="gradient-text">opportunity in mind?</span>
+          </h2>
+          <p class="section-subtitle">
+            Iâ€™m open to learning, building, and exploring opportunities in software development.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column reveal-fade-up">
+            
+            <!-- Email Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">Email Address</span>
+                <a href="mailto:koushikakkula@gmail.com" class="contact-card-value">koushikakkula@gmail.com</a>
+              </div>
+              <button class="copy-btn" id="copyEmailBtn" aria-label="Copy email address" title="Copy Email">
+                <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon icon-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">Phone Number</span>
+                <a href="tel:+917569436054" class="contact-card-value">+91 7569436054</a>
+              </div>
+            </div>
+
+            <!-- Location Card -->
+            <div class="contact-card glass-panel">
+              <div class="contact-card-icon icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">Location</span>
+                <span class="contact-card-value">Hyderabad, Telangana, India</span>
+              </div>
+            </div>
+
+            <!-- Quick Action Links -->
+            <div class="contact-actions-bar">
+              <a href="mailto:koushikakkula@gmail.com" class="btn btn-primary glow-effect flex-1">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Email Me</span>
+              </a>
+              <a href="https://www.linkedin.com/in/akula-koushik-7b52ab291/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary glass-panel flex-1">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Interactive Direct Message Form -->
+          <div class="contact-form-column reveal-fade-up" style="--reveal-delay: 0.15s;">
+            <div class="contact-form-card glass-panel">
+              <h3 class="form-title">Send a Quick Message</h3>
+              <p class="form-subtitle">Reach out directly via this quick form or send an email.</p>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Your Name</label>
+                  <input type="text" id="senderName" class="form-input" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Your Email</label>
+                  <input type="email" id="senderEmail" class="form-input" placeholder="name@example.com" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="messageSubject" class="form-label">Subject</label>
+                  <input type="text" id="messageSubject" class="form-input" placeholder="Software Engineering Opportunity / Project Inquiry" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="messageText" class="form-label">Message</label>
+                  <textarea id="messageText" class="form-textarea" rows="4" placeholder="Hello Koushik, I would like to discuss..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary glow-effect btn-full">
+                  <span>Send Message</span>
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <div class="footer-brand">
+        <a href="#home" class="brand-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">AK</span>
+          <span class="logo-dot">.</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Akula Koushik â€¢ Software Developer</p>
+      </div>
+
+      <div class="footer-copy">
+        <p>Â© 2026 Akula Koushik. All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/koushikakkula-prog" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/akula-koushik-7b52ab291/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+        <a href="mailto:koushikakkula@gmail.com" class="social-icon" aria-label="Email Akula Koushik">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="toast" role="alert" aria-live="polite">
+    <svg class="toast-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMessage">Email copied to clipboard!</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
